@@ -1,3 +1,9 @@
+TIRE_DATA = {
+    "Soft": {"lifespan": 15, "time_loss": 0.15},
+    "Medium": {"lifespan": 25, "time_loss": 0.10},
+    "Hard": {"lifespan": 40, "time_loss": 0.05}
+}
+
 def main():
     while True:
         print("\n==================================")
@@ -10,9 +16,9 @@ def main():
         choice = input("\nEnter your choice (1-3): ")
         
         if choice == '1':
-            print("\nCalculating pit window... (Logic coming soon)")
+            print("\nCalculating pit window")
         elif choice == '2':
-            print("\nFetching tire data... (Logic coming soon)")
+            print("\nFetching tire data")
         elif choice == '3':
             print("\nBox, box. Exiting strategy tool.")
             break
